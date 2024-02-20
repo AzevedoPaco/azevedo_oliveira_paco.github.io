@@ -1,2 +1,2 @@
-# azevedo_oliveira_paco.github.io
+# azevedo_oliveira_paco
 Personal page.
