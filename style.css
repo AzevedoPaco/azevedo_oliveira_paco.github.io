@@ -1,0 +1,138 @@
+/*Commentaire en css, comme en c finalement !*/
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: rgb(251, 241, 228) ;
+}
+
+nav
+{	
+	background-color: #1c212be4;
+	text-align: center;
+	margin: 0;
+}
+
+
+nav ul
+{
+	margin : 0;
+	padding: 0;
+	list-style: none;
+	float: center;
+}
+
+nav li
+{
+	display: inline-block;
+}
+
+nav a
+{
+	display : block; /* les liens se comportent comme des block individuels,
+	cela evite le chevauchement en cas de petite largeur d'ecran */
+	padding : 1em;
+	margin : 1em 1.1em;
+	text-decoration : none; /* enleve le soulignement habituel des liens */
+	letter-spacing : 1.3px; /* pour plus de lisibilite */
+	font-size : 0.9em;
+	color : #F5F5F5;
+	background-color : #5e0066d4;
+}
+
+nav li a:hover { /* style des boutons de liens qu'on survole */
+background-color : #0066CC;
+color : #F5F5F5;
+font-weight : normal; /* car on a regle le cas general sur bold */
+}
+
+nav .active a
+{
+	background-color: #0066CC;
+}
+
+#logo
+{
+  background: url('images/header2.jpeg') center;
+  height: 200px;
+  width:100%;
+  background-size: cover;
+  clear : both;
+  padding: 1em 0;
+  font-family: 'Raleway';
+  justify-content: space-between;
+  background-color: #FFF;
+}
+
+
+#logo h1
+{
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 2px;	
+	font-size: 3em;
+	color: #f1e9e9; /*#00bfb7; */
+}
+
+#logo h2
+{
+	margin-top: 0;
+	margin-bottom: 0.6em;
+	font-size: 1.3em;
+	font-weight: 600;
+	text-align: center;
+	color: #bcc5d8;
+}	
+
+.conteneur {
+	display: block;
+	margin: 10px auto;
+	padding: 30px;
+	border-radius: 10px;
+	max-width: 900px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.conteneur p {
+	line-height: 1.4;
+	vertical-align: center;
+	text-align: justify;
+}
+
+.conteneur img {
+	width: 210px;
+	height: 210px;
+	object-fit: cover;
+	border-radius: 50%;
+	float: left;
+	shape-outside: margin-box;
+	margin: 0 20px 5px 0;
+}
+
+.conteneur::after {
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+.conteneur2 {
+	display: block;
+	margin: 10px auto;
+	padding: 30px;
+	border-radius: 10px;
+	max-width: 900px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
+
+}
+
+.conteneur2 img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	shape-outside: margin-box;
+	object-fit: cover;
+}
